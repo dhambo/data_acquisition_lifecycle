@@ -1,13 +1,4 @@
-# data_acquisition_lifecycle
-tugas akuisisi
-Akuisisi dan Manajemen Data
-Informasi Tugas
-Mata Kuliah: Akuisisi dan Manajemen Data
-Kode Mata Kuliah: BIFP-243
-Pertemuan: 1
-Program Studi: Informatika(DA)
-Fakultas: Teknologi dan Informatika
-Deskripsi
+
 
 Repository ini berisi tugas pemetaan Data Science Lifecycle yang meliputi Acquisition, Storage, Cleaning, Transformation, Analysis, dan Delivery.
 
