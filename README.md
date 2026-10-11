@@ -1,27 +1,3 @@
+Reproducibility atau keterulangan merupakan aspek penting dalam akuisisi data karena memungkinkan proses pengumpulan data dilakukan kembali dengan metode, sumber, dan parameter yang konsisten. Dengan reproducibility, peneliti dapat memverifikasi hasil, menemukan kesalahan, serta memastikan bahwa kesimpulan penelitian tidak hanya bergantung pada satu kali pengumpulan data. Penerapan prinsip ini dapat dilakukan dengan mendokumentasikan sumber data, waktu pengambilan, versi perangkat lunak, parameter API, serta menyimpan kode akuisisi dalam repository Git. Selain itu, pencatatan perubahan data membantu proses audit dan kolaborasi antaranggota tim.
 
-DESKRIPSI
-
-Repository ini berisi tugas pemetaan Data Science Lifecycle yang meliputi Acquisition, Storage, Cleaning, Transformation, Analysis, dan Delivery.
-
-STRUKTUR REPOSITORY 
-docs/lifecycle.csv: tabel pemetaan Data Science Lifecycle.
-src/lifecycle.py: kode Python untuk membuat dan menyimpan tabel.
-requirements.txt: daftar dependensi Python.
-README.md: dokumentasi repository.
-
-TOOLS
-
-Python
-Pandas
-Git
-GitHub
-
-CARA MENJALANKAN 
-
-Instal dependensi dengan pip install -r requirements.txt.
-Jalankan kode menggunakan python src/lifecycle.py.
-Periksa hasil pada docs/lifecycle.csv.
-
-TUJUAN
-
-Memahami tahapan pengelolaan data, mengenali tools yang digunakan, serta mengidentifikasi risiko pada setiap tahap siklus data science.
+Contoh kasus nyata adalah pengumpulan data cuaca dari API BMKG untuk menganalisis curah hujan di suatu wilayah. Jika peneliti hanya menyimpan hasil akhir tanpa mencatat waktu pengambilan, parameter permintaan, dan kode yang digunakan, peneliti lain mungkin kesulitan memperoleh atau memverifikasi hasil yang sama. Data cuaca juga dapat berubah ketika pengukuran diperbarui. Dengan menyimpan respons asli, metadata, kode pengambilan, dan tanggal akses, proses analisis dapat ditelusuri dan diulang dengan lebih baik. Apabila data sumber telah berubah, peneliti dapat membedakan hasil berdasarkan data historis dan data terbaru. Oleh karena itu, reproducibility meningkatkan transparansi, keandalan, dan kredibilitas penelitian berbasis data.
